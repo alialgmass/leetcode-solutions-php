@@ -38,8 +38,8 @@ class Solution
     function twoSum($nums, $target)
     {
         foreach ($nums as $index => $num) {
-            $lenght = count($nums) - 1;
-            for ($i = $index + 1; $i <= $lenght; $i++) {
+
+            for ($i = $index + 1; $i <= (count($nums) - 1); $i++) {
                 if ($num + $nums[$i] == $target) {
                     return [$index, $i];
                 }
